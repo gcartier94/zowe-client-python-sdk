@@ -50,6 +50,7 @@ class Files(SdkApi):
         custom_args["params"] = {"dslevel": name_pattern}
         custom_args["url"] = "{}ds".format(self.request_endpoint)
         response_json = self.request_handler.perform_request("GET", custom_args)
+        print("Hello World!")
         return response_json
 
     def list_dsn_members(self, dataset_name):
